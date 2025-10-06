@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cstdlib>  
 #include <ctime>    
 
@@ -38,6 +38,39 @@ int main() {
     cout << "Второй массив: ";
     for (int i = 0; i < HALF; ++i)
         cout << secondHalf[i] << " ";
+    cout << endl;
+
+    return 0;
+
+
+
+
+
+
+    const int SIZE = 5;
+    int a[SIZE] = { 1, 2, 3, 4, 5 };     
+    int b[SIZE] = { 10, 20, 30, 40, 50 }; 
+    int sum[SIZE];                     
+
+
+    for (int i = 0; i < SIZE; ++i) {
+        sum[i] = a[i] + b[i];
+    }
+
+
+    cout << "Первый массив: ";
+    for (int i = 0; i < SIZE; ++i)
+        cout << a[i] << " ";
+    cout << endl;
+
+    cout << "Второй массив: ";
+    for (int i = 0; i < SIZE; ++i)
+        cout << b[i] << " ";
+    cout << endl;
+
+    cout << "Сумма элементов: ";
+    for (int i = 0; i < SIZE; ++i)
+        cout << sum[i] << " ";
     cout << endl;
 
     return 0;
